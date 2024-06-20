@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body style="text-align: center; background-color: lightgoldenrodyellow;">
+  <h1><img class="imgf" src="forms.png" alt="">Innomatics Form</h1>
+  <div class="forms">
+    <form class="formbox">
+      <label for="name">User Name:</label>
+      <input type="text" placeholder="Name*" id="name" minlength="6" maxlength="25" required><br><br>
+      <label for="mail">Email:</label>
+      <input type="email" placeholder="Email*" id="mail" required><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" minlength="8" required><br><br>
+      <label for="phn">Phone Number:</label>
+      <input type="tel" id="phn" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10" ><br><br>
+      <label for="proflie">Profile Image:</label>
+      <input type="file" id="proflie"><br><br>
+      <label for="dob">DOB:</label>
+      <input type="date" id="dob" required><br><br>
+      <label for="slot">Slot Booking:</label>
+      <input type="time" id="slot"><br><br>
+      <label for="gen">Gender:</label>
+      <input type="radio" value="Male" name="gender" id="gen">Male
+      <input type="radio" value="Female"name="gender" id="gen">Female
+      <input type="radio" value="Others"  name="gender"id="gen">Others<br><br>
+      <label for="add">Address:</label>
+      <textarea placeholder="Address"></textarea><br><br>
+      <label for="course">Courses you are interested in:</label>
+      <label for="frontend">frontend</label>
+      <input type="checkbox" value="frontend" id="frontend" name="course">
+      <label for="backend">backend</label>
+      <input type="checkbox" value="Female" id="backend" name="course">
+      <label for="others">java</label>
+      <input type="checkbox" value="Others" id="others" name="course"><br><br>
+      <label for="country">Country</label>
+      <select id="country">
+        <option></option>
+        <option>India</option>
+        <option>China</option>
+        <option>Australia</option>
+        <option>USA</option>
+        <option>Canada</option>
+      </select><br><br>
+      <input id="but" type="submit"  value="submit"><br><br>
+      <input id="but" type="reset" value="reset">
+    </form>
+</div>
+</body>
+</html>
